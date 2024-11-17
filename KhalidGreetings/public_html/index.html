@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saluto</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <form name="form">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome"><br>
+        
+        <label for="cognome">Cognome:</label><br>
+        <input type="text" id="cognome" name="cognome"><br><br>
+        
+        <label for="giorno">Giorno:</label>
+        <select id="giorno" name="giorno"></select>
+
+        <label for="mese">Mese:</label>
+        <select id="mese" name="mese"></select>
+        
+        <label for="anno">Anno:</label>
+        <select id="anno" name="anno"></select><br><br>
+        
+        <button type="button" onclick="salve()">Click me!</button><br>
+    </form>
+
+    <p id="saluto"></p>
+</body>
+</html>
