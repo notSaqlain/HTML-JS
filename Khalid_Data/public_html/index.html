@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Salve</title>
+        <script>
+            function salve() {
+                var d = new Date();
+                var h = d.getHours();
+                var m = d.getMinutes();
+                var giorno = d.getDate();
+                var mese = d.getMonth();
+                var nome = "Saqlain";
+                var cognome = "Khalid";
+                var saluto = "Buona notte";
+                if (h >= 6 && h < 14) {
+                    saluto = "Buongiorno";
+                } else if (h >= 14 && h < 19) {
+                    saluto = "Buon pomeriggio";
+                } else if (h >= 19 && h < 24) {
+                    saluto = "Buona sera";
+                }
+                document.getElementById("saluto").innerHTML = saluto + " " + nome + " " + cognome + ", sono le " + h + ":" + m + ", di " + giorno + "/" + mese;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Salve</h1>
+        <button onclick="salve()">Click me!</button>
+        <p id="saluto"></p>
+    </body>
+</html>
